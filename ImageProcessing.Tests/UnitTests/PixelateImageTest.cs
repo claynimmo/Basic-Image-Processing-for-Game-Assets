@@ -7,9 +7,9 @@ namespace ImageProcessing.Tests;
 public class PixelateImageTest{
     [Fact]
     public void ImageIsEqual(){
-        string filePath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "image.png");
-        string newFilePath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "Outputs/image-pixelated.png");
-        string compareFilePath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "TestOutputs/image-pixelated.png");
+        string filePath = Path.Combine(AppContext.BaseDirectory, TestingUtils.filePath);
+        string newFilePath = Path.Combine(AppContext.BaseDirectory, TestingUtils.outputsPath,"image-pixelated.png");
+        string compareFilePath = Path.Combine(AppContext.BaseDirectory, TestingUtils.testOutputsPath,"image-pixelated.png");
         ImageLoader image = new ImageLoader(filePath);
 
         ImagePixelator pixelator = new ImagePixelator(40);
