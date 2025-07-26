@@ -128,6 +128,12 @@ namespace ImageProcessing
         /// </summary>
         /// <param name="newFilePath">The file path which the image will be saved into</param>
         public void SaveImage(string newFilePath){
+            string? directoryPath = Path.GetDirectoryName(newFilePath);
+
+            if(directoryPath != string.Empty && directoryPath != null){
+                Directory.CreateDirectory(directoryPath);
+            }
+            
             imageMap.Save(newFilePath);
         }
 

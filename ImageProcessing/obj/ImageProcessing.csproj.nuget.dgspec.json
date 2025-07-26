@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing\\ImageProcessing.csproj": {}
+    "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing-Git\\Basic-Image-Processing-for-Game-Assets\\ImageProcessing\\ImageProcessing.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing\\ImageProcessing.csproj": {
+    "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing-Git\\Basic-Image-Processing-for-Game-Assets\\ImageProcessing\\ImageProcessing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing\\ImageProcessing.csproj",
+        "projectUniqueName": "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing-Git\\Basic-Image-Processing-for-Game-Assets\\ImageProcessing\\ImageProcessing.csproj",
         "projectName": "ImageProcessing",
-        "projectPath": "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing\\ImageProcessing.csproj",
+        "projectPath": "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing-Git\\Basic-Image-Processing-for-Game-Assets\\ImageProcessing\\ImageProcessing.csproj",
         "packagesPath": "C:\\Users\\nimmo_32wh0bt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing\\obj\\",
+        "outputPath": "C:\\Users\\nimmo_32wh0bt\\Documents\\docs\\coding\\ImageProcessing-Git\\Basic-Image-Processing-for-Game-Assets\\ImageProcessing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -54,6 +54,7 @@ namespace ImageProcessing{
                 default:
                     break;
             }
+            newFilePath = Path.Combine("Outputs",newFilePath);
             SaveFile(newFilePath,image);
         }
 
