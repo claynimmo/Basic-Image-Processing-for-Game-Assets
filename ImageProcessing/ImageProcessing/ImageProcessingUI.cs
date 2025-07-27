@@ -1,4 +1,6 @@
 
+using System.Drawing;
+
 namespace ImageProcessing{
 
     public class ImageProcessingUI{
@@ -15,7 +17,8 @@ namespace ImageProcessing{
                     "3: Normalize (turn all colours within a range white, and the rest black)\n"+
                     "4: Normal Map\n"+
                     "5: Invert\n"+
-                    "6: Blur";
+                    "6: Blur\n"+
+                    "7: Saturate";
                 int type = InputManager.NumberInput(1,5,typePrompt);
                 
                 SelectProcessingType(type, filePath);
@@ -50,6 +53,10 @@ namespace ImageProcessing{
                 case 6:
                     BlurImage(image);
                     newFilePath = $"{Path.GetFileNameWithoutExtension(filePath)}-blur{Path.GetExtension(filePath)}";
+                    break;
+                case 7:
+                    SaturateImage(image);
+                    newFilePath = $"{Path.GetFileNameWithoutExtension(filePath)}-saturated{Path.GetExtension(filePath)}";
                     break;
                 default:
                     break;
@@ -110,6 +117,14 @@ namespace ImageProcessing{
             int sampleSize = InputManager.NumberInput(0,10000,sampleSizeInput);
             ImageBlur blur = new ImageBlur(sampleSize);
             blur.ProcessImage(image);
+        }
+
+        private void SaturateImage(ImageLoader image){
+
+            string saturationBoostPrompt = "\nInput the saturation boost (a multiplyer to the pixel's saturation)";
+            float saturationBoost = (float)InputManager.DecimalInput(saturationBoostPrompt);
+            ImageSaturator saturator = new ImageSaturator(saturationBoost);
+            saturator.ProcessImage(image);
         }
 
 
